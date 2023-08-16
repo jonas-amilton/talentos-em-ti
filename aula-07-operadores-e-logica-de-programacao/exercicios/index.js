@@ -70,6 +70,6 @@ let éMaiorDeIdade = anoAtual - anoNascimento >= 18? alert(`${nome} é maior de 
 éMaiorDeIdade = anoAtual - anoNascimento >= 18? console.log(true) : console.log(false)
 
 // ● Quantos anos ela terá em 2050
-let idadeEm2050 = Number((anoAtual - anoNascimento) + (2050 - anoAtual))
+let idadeEm2050 = Number(2050 - anoNascimento)
 
 alert(`Em 2050 ${nome} terá ${idadeEm2050} anos`)
