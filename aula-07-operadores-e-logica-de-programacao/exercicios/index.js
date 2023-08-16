@@ -14,18 +14,34 @@ console.log(234%5);
 // valores true, false e true, respectivamente
 // a = true b = false c = true
 
-let souColorado = true; //a
-let tenhoCarro = false; //b
-let tenhoGato = false; //c
+let a = true; //a
+let b = false; //b
+let c = false; //c
 
 // realize a operacao a && b
-console.log(souColorado && tenhoCarro);
+console.log(a && b);
 
 // realize a operacao b && c
-console.log(tenhoCarro && tenhoGato);
+console.log(b && c);
 
 // realize a operacao a && c
-console.log(souColorado && tenhoGato);
+console.log(a && c);
 
 // realize a operacao a && b && c
-console.log(souColorado && tenhoCarro && tenhoGato);
+console.log(a && b && c);
+
+// Antes de começar, crie 3 variáveis: a, b e c. Atribua os
+// valores true, false e true, respectivamente
+// a= true b = false c = true
+
+// 1. Realize a operação: a || b
+console.log(a || b);
+
+// 2. Realize a operação: b || c
+console.log(b || c);
+
+// 3. Realize a operação: a || c
+console.log(a || c);
+
+// 4. Realize a operação: a || b || c
+console.log(a || b || c);
