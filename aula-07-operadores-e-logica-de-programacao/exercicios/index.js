@@ -62,7 +62,12 @@ alert(`A sua idade é ${anoAtual - anoNascimento}`)
 
 // ● Um true ou false que diz se ela é
 // maior de idade
-const éMaiorDeIdade = anoAtual - anoNascimento >= 18? alert(`${nome} é maior de idade`) : alert(`${nome} não é maior de idade`)
+
+//versao-1
+// const éMaiorDeIdade = anoAtual - anoNascimento >= 18? alert(`${nome} é maior de idade`) : alert(`${nome} não é maior de idade`)
+
+//versao-2
+const éMaiorDeIdade = anoAtual - anoNascimento >= 18? console.log(true) : console.log(false)
 
 // ● Quantos anos ela terá em 2050
 let idadeEm2050 = Number((anoAtual - anoNascimento) + (2050 - anoAtual))
