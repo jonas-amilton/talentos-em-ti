@@ -45,3 +45,26 @@ console.log(a || c);
 
 // 4. Realize a operação: a || b || c
 console.log(a || b || c);
+
+// Faça um programa que receba o
+// nome, ano de nascimento de uma
+// pessoa e o ano atual e mostre:
+
+let nome = prompt('Qual seu nome?')
+let anoNascimento = Number(prompt('Qual ano voce nasceu?'))
+let anoAtual =2023
+
+// ● O nome da pessoa
+alert(`Seu nome é ${nome}`)
+
+// ● A idade dessa pessoa
+alert(`A sua idade é ${anoAtual - anoNascimento}`)
+
+// ● Um true ou false que diz se ela é
+// maior de idade
+const éMaiorDeIdade = anoAtual - anoNascimento >= 18? alert(`${nome} é maior de idade`) : alert(`${nome} não é maior de idade`)
+
+// ● Quantos anos ela terá em 2050
+let idadeEm2050 = Number((anoAtual - anoNascimento) + (2050 - anoAtual))
+
+alert(`Em 2050 ${nome} terá ${idadeEm2050} anos`)
