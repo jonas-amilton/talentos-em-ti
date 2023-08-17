@@ -73,3 +73,12 @@ let éMaiorDeIdade = anoAtual - anoNascimento >= 18? alert(`${nome} é maior de 
 let idadeEm2050 = Number(2050 - anoNascimento)
 
 alert(`Em 2050 ${nome} terá ${idadeEm2050} anos`)
+
+/**
+Anotações da aula
+
+Não usar muitas funções na mesma linha
+Manter código legivel
+Evitar repetições de código
+
+*/
