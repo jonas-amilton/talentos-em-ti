@@ -1,14 +1,46 @@
+/**
+ *
+ * Escreva as funÔøΩÔøΩes explicadas abaixo:
+ *
+ * a) Escreva uma funÔøΩÔøΩo que receba 2 nÔøΩmeros como parÔøΩmetros,
+ *  e, dentro da funÔøΩÔøΩo, faÔøΩa a soma das duas entradas e retorne
+ * o resultado. Invoque a funÔøΩÔøΩo e imprima no console o resultado.
+ **/
+
+const soma = (n1, n2) => n1 + n2;
+
+console.log("Resultado = ", soma(2, 3));
 
 /**
- * 
- * Escreva as funÁıes explicadas abaixo:
- * 
- * a) Escreva uma funÁ„o que receba 2 n˙meros como par‚metros, e, dentro da funÁ„o, faÁa a soma das duas entradas e retorne o resultado. Invoque a funÁ„o e imprima no console o resultado.
- * 
- * b) FaÁa uma funÁ„o que recebe 2 n˙meros e retorne um booleano que informa se o primeiro n˙mero È maior ou igual ao segundo.
- * 
- * c) Escreva uma funÁ„o que receba um n˙mero e devolva um booleano indicando se ele È par ou n„o.
- * 
- * d) FaÁa uma funÁ„o que recebe uma mensagem (string) como par‚metro e imprima o tamanho dessa mensagem, juntamente com uma vers„o dela em letras mai˙sculas.
- * 
-**/
+ * b) FaÔøΩa uma funÔøΩÔøΩo que recebe 2 nÔøΩmeros e retorne um booleano
+ * que informa se o primeiro nÔøΩmero ÔøΩ maior ou igual ao segundo.
+ **/
+
+const verificaMaiorOuIgual = (n1, n2) => n1 >= n2;
+
+console.log("√â maior? ", verificaMaiorOuIgual(2, 4));
+
+/**
+ * c) Escreva uma funÔøΩÔøΩo que receba um nÔøΩmero e devolva um booleano
+ *  indicando se ele ÔøΩ par ou nÔøΩo.
+ **/
+
+const verificaPar = (num) => num % 2 === 0;
+
+console.log("√â par? ", verificaPar(3));
+
+/**
+ * d) FaÔøΩa uma funÔøΩÔøΩo que recebe uma mensagem (string)
+ *  como parÔøΩmetro e imprima o tamanho dessa mensagem, juntamente
+ * com uma versÔøΩo dela em letras maiÔøΩsculas.
+ *
+ **/
+
+const mensagem = (mensagem) => {
+  let tamanhoMensagem = mensagem.length;
+  let mensagemMaiuscula = mensagem.toUpperCase();
+
+  return `A ${mensagem} tem ${tamanhoMensagem} caracteres e maiuscula ficaria ${mensagemMaiuscula}`;
+};
+
+console.log(mensagem("Ol√° Mundo"));
