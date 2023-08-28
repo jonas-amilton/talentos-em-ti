@@ -7,7 +7,7 @@ let idadeEmMeses = idade * 12;
 console.log('Idade em meses é: ', idadeEmMeses);
 
 // c) Imprima no console a idade do usuário em dias.
-let idadeEmDias = idadeEmMeses * 365;
+let idadeEmDias = idade * 365;
 console.log('Idade em dias é: ', idadeEmDias);
 
 
