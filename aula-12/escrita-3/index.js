@@ -22,19 +22,19 @@
  **/
 
 const calculadora = (operacao, n1, n2) => {
-  if (operacao.toLowerCase() == "soma") {
+  if (operacao.toLowerCase() === "soma") {
     let soma = Number(n1) + Number(n2);
 
     return soma;
-  } else if (operacao.toLowerCase() == "subtração") {
+  } else if (operacao.toLowerCase() === "subtração") {
     let subtracao = Number(n1) - Number(n2);
 
     return subtracao;
-  } else if (operacao.toLowerCase() == "multiplicação") {
+  } else if (operacao.toLowerCase() === "multiplicação") {
     let multiplicacao = Number(n1) * Number(n2);
 
     return multiplicacao;
-  } else if (operacao.toLowerCase() == "divisão") {
+  } else if (operacao.toLowerCase() === "divisão") {
     let divisao = Number(n1) / Number(n2);
 
     return divisao;
