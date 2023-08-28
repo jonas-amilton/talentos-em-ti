@@ -1,18 +1,49 @@
-
 /**
- * 
- * Crie uma funÁ„o para cada uma das operaÁıes b·sicas (soma, subtraÁ„o, multiplicaÁ„o e divis„o).
- * 
- * PeÁa para o usu·rio inserir dois n˙meros e chame essas 4 funÁıes com esses valores inseridos pelo usu·rio sendo o argumento. Por fim, mostre no console o resultado das operaÁıes:
- * 
+ *
+ * Crie uma funÔøΩÔøΩo para cada uma das operaÔøΩÔøΩes bÔøΩsicas
+ *  (soma, subtraÔøΩÔøΩo, multiplicaÔøΩÔøΩo e divisÔøΩo).
+ *
+ * PeÔøΩa para o usuÔøΩrio inserir dois nÔøΩmeros e
+ * chame essas 4 funÔøΩÔøΩes com esses valores inseridos
+ * pelo usuÔøΩrio sendo o argumento. Por fim,
+ * mostre no console o resultado das operaÔøΩÔøΩes:
+ *
  * Exemplo:
- * 
- * N˙meros inseridos: 30 e 3
+ *
+ * NÔøΩmeros inseridos: 30 e 3
  * Soma: 33
- * DiferenÁa: 27
- * MultiplicaÁ„o: 90
- * Divis„o: 10
- * 
- * Dica: lembre-se de converter a entrada do usu·rio para n˙mero antes de fazer os c·lculos.
- * 
-**/
+ * DiferenÔøΩa: 27
+ * MultiplicaÔøΩÔøΩo: 90
+ * DivisÔøΩo: 10
+ *
+ * Dica: lembre-se de converter a entrada do usuÔøΩrio
+ *  para nÔøΩmero antes de fazer os cÔøΩlculos.
+ *
+ **/
+
+const calculadora = (operacao, n1, n2) => {
+  if (operacao.toLowerCase() == "soma") {
+    let soma = Number(n1) + Number(n2);
+
+    return soma;
+  } else if (operacao.toLowerCase() == "subtra√ß√£o") {
+    let subtracao = Number(n1) - Number(n2);
+
+    return subtracao;
+  } else if (operacao.toLowerCase() == "multiplica√ß√£o") {
+    let multiplicacao = Number(n1) * Number(n2);
+
+    return multiplicacao;
+  } else if (operacao.toLowerCase() == "divis√£o") {
+    let divisao = Number(n1) / Number(n2);
+
+    return divisao;
+  } else {
+    return `Operador invalido`;
+  }
+};
+
+console.log("soma = ", calculadora("soma", 2, 4));
+console.log("subtra√ß√£o = ", calculadora("subtra√ß√£o", 2, 4));
+console.log("multiplica√ß√£o = ", calculadora("multiplica√ß√£o", 2, 4));
+console.log("divis√£o = ", calculadora("divis√£o", 2, 4));
