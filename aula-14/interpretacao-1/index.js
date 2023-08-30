@@ -1,5 +1,5 @@
 
-// Leia o código
+// Leia o cï¿½digo
 
 const filme = {
 	nome: "Auto da Compadecida", 
@@ -12,8 +12,13 @@ const filme = {
 	]
 }
 
-console.log(filme.elenco[0])
-console.log(filme.elenco[filme.elenco.length - 1])
-console.log(filme.transmissoesHoje[2])
-
 // O que vai ser impresso no console?
+
+console.log(filme.elenco[0])
+// Matheus Nachtergaele
+
+console.log(filme.elenco[filme.elenco.length - 1])
+// Virginia Cavendish
+
+console.log(filme.transmissoesHoje[2])
+// { canal: "Globo", horario: "14h" }
