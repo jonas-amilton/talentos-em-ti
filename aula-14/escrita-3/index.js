@@ -1,14 +1,44 @@
-
 /**
- * 
+ *
  * Resolva os passos a seguir
- * 
- * a) Crie uma variável de escopo global que guarde um "array" vazio chamada "carrinho".
- * 
- * b) Crie três novos objetos que representem frutas de um sacolão. Eles devem ter as seguintes propriedades: nome ("string") e disponibilidade ("boolean" - devem começar como "true").
- * 
- * c) Crie uma função que receba um "objeto" fruta por parâmetro e coloque-a dentro do "array" de "carrinho". Invoque essa função passando os três objetos criados. Dica: aqui você deve usar o método "push()".
- * 
- * d) Imprima a variável "carrinho" e garanta que ela agora seja um "array" preenchido com três objetos.
- * 
-**/
+ *
+ * a) Crie uma variï¿½vel de escopo global que guarde um "array" vazio chamada "carrinho".
+ *
+ * b) Crie trï¿½s novos objetos que representem frutas de um sacolï¿½o.
+ * Eles devem ter as seguintes propriedades: nome ("string") e disponibilidade
+ * ("boolean" - devem comeï¿½ar como "true").
+ *
+ * c) Crie uma funï¿½ï¿½o que receba um "objeto" fruta por parï¿½metro e coloque-a
+ * dentro do "array" de "carrinho". Invoque essa funï¿½ï¿½o passando os trï¿½s objetos criados.
+ * Dica: aqui vocï¿½ deve usar o mï¿½todo "push()".
+ *
+ * d) Imprima a variï¿½vel "carrinho" e garanta que ela agora seja um "array" preenchido com trï¿½s objetos.
+ *
+ **/
+
+let carrinho = [];
+
+let fruta1 = {
+  nome: "MaÃ§Ã£",
+  disponibilidade: true,
+};
+
+let fruta2 = {
+  nome: "Banana",
+  disponibilidade: true,
+};
+
+let fruta3 = {
+  nome: "Manga",
+  disponibilidade: true,
+};
+
+adicionaNoCarrinho(fruta1, fruta2, fruta3);
+
+function adicionaNoCarrinho(fruta1, fruta2, fruta3) {
+  carrinho.push(fruta1);
+  carrinho.push(fruta2);
+  carrinho.push(fruta3);
+
+  console.log(carrinho);
+}
