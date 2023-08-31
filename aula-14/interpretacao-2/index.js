@@ -1,5 +1,5 @@
 
-// Leia o código
+// Leia o cï¿½digo
 
 const cachorro = {
 	nome: "Juca", 
@@ -17,4 +17,24 @@ console.log(tartaruga)
 
 // a) O que vai ser impresso no console?
 
-// b) O que faz a sintaxe dos três pontos antes do nome de um objeto?
+console.log(cachorro)
+//  {
+// 	nome: "Juca", 
+// 	idade: 3, 
+// 	raca: "SRD"
+// }
+
+console.log(gato)
+//  {
+// 	idade: 3, 
+// 	raca: "SRD"
+//  nome: "Juba" }
+
+
+console.log(tartaruga)
+// idade: 3, 
+// raca: "SRD"
+// nome:'Jubo' }
+
+// b) O que faz a sintaxe dos trï¿½s pontos antes do nome de um objeto?
+// Ã© um spread, server pra espalhar um objeto em outro
