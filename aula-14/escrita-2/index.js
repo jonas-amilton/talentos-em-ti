@@ -1,40 +1,34 @@
+
 /**
- *
+ * 
  * Resolva os passos a seguir
- *
- * a) Crie dois "objetos" diferentes com as seguintes propriedades: nome, idade e profissï¿½o.
- *
- * b) Escreva uma "funï¿½ï¿½o" que receba um "objeto" de cada vez e retorne um "array" com as seguintes informaï¿½ï¿½es:
+ * 
+ * a) Crie dois "objetos" diferentes com as seguintes propriedades: nome, idade e profissão. 
+ * 
+ * b) Escreva uma "função" que receba um "objeto" de cada vez e retorne um "array" com as seguintes informações:
  * - O valor de "nome".
  * - O numero de caracteres do valor "nome".
  * - O valor de "idade".
- * - O valor de "profissï¿½o".
- * - O numero de caracteres do valor "profissï¿½o".
- *
- **/
+ * - O valor de "profissão".
+ * - O numero de caracteres do valor "profissão".
+ * 
+**/
 
 const pessoa = {
-  nome: "Bruno",
-  idade: 23,
-  profissao: "Instrutor",
-};
-
-function minhaFuncao(pessoa) {
-  let resultado = [];
-
-  // Desenvolver sua logica
-
-  let qtdCaracteresNome = pessoa.nome.length;
-  let qtdCaracteresProfissao = pessoa.profissao.length;
-
-  resultado.push(pessoa.nome);
-  resultado.push(qtdCaracteresNome);
-  resultado.push(pessoa.idade);
-  resultado.push(pessoa.profissao);
-  resultado.push(qtdCaracteresProfissao);
-
-  return resultado;
+	nome: "Bruno", 
+	idade: 23, 
+	profissao: "Instrutor"
 }
 
-console.log(minhaFuncao(pessoa));
+
+function minhaFuncao(pessoa) {
+	let resultado = []
+
+	// Desenvolver sua logica
+
+	return resultado
+}
+
+
+console.log(minhaFuncao(pessoa))
 // Retorno: ["Bruno", 5, 23, "Instrutor", 9]

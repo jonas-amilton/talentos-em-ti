@@ -1,5 +1,5 @@
 
-// Leia o cï¿½digo
+// Leia o código
 
 function minhaFuncao(objeto, propriedade) {
 	return objeto[propriedade]
@@ -10,19 +10,10 @@ const pessoa = {
   idade: 23, 
   backender: false
 }
-// a) O que vai ser impresso no console?
+
 console.log(minhaFuncao(pessoa, "backender"))
-// false
-
 console.log(minhaFuncao(pessoa, "altura"))
-// undefined
 
+// a) O que vai ser impresso no console?
 
-
-// b) Explique o valor impresso no console. Vocï¿½ sabe por que isso aconteceu?
-/**
- * pessoa["backender"] tem o valor falso atribuido dentro do objeto pesso
- * 
- * pessoa["altura"] retornou o undefined por que propriedade altura nÃ£o existe detro do objeto pessoa
- * entÃ£o nada Ã© encontrado, o mesmo aconteceria se fizessemos un console.log(pessoa[3]);
- */
+// b) Explique o valor impresso no console. Você sabe por que isso aconteceu?
