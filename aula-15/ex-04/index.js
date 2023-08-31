@@ -40,5 +40,6 @@ switch (pokemonEscolhido) {
     break;
 
   default:
+    console.log("Pokemon indisponivel");
     break;
 }
