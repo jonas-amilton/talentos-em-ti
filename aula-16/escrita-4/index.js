@@ -1,12 +1,30 @@
-
 /**
- * 
- * Considere a situação
- * 
- * Você vai ao cinema com um amigo ou amiga, porém ele/ela só assistirá a um filme com você se ele for do gênero fantasia e se o ingresso custar menos de 15 reais.
- * 
- * Faça um código que pergunta ao usuário qual o gênero de filme que vão assistir e outra pergunta sobre o preço do ingresso, então verifique se seu amigo ou amiga vai topar assistir o filme.
- * 
- * Caso positivo, imprima no console a mensagem: "Bom filme!", caso contrário, imprima "Escolha outro filme :(".
- * 
-**/
+ *
+ * Considere a situaï¿½ï¿½o
+ *
+ * Vocï¿½ vai ao cinema com um amigo ou amiga, porï¿½m ele/ela sï¿½ assistirï¿½
+ * a um filme com vocï¿½ se ele for do gï¿½nero fantasia e se o ingresso
+ * custar menos de 15 reais.
+ *
+ * Faï¿½a um cï¿½digo que pergunta ao usuï¿½rio qual o gï¿½nero de
+ *  filme que vï¿½o assistir e outra pergunta sobre o preï¿½o do ingresso,
+ *  entï¿½o verifique se seu amigo ou amiga vai topar assistir o filme.
+ *
+ * Caso positivo, imprima no console a mensagem: "Bom filme!",
+ * caso contrï¿½rio, imprima "Escolha outro filme :(".
+ *
+ **/
+
+let genero = prompt(
+  "Digite o genero do filme \n fantasia \n terror \n aÃ§Ã£o"
+).toLocaleLowerCase();
+
+let precoIngresso = Number(prompt("Digite o valor do ingresso"));
+
+if (genero === "fantasia" && precoIngresso < 15) {
+  alert("Bom filme");
+} else if (precoIngresso >= 15) {
+  alert("Ingresso esta caro, escolha outro filme");
+} else {
+  alert("Genero nÃ£o Ã© fantasia, escolha outro filme");
+}
