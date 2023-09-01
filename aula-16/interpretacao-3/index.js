@@ -1,17 +1,23 @@
 
-// Leia o código
+// Leia o cï¿½digo
 
-const numero = Number(prompt("Digite o primeiro número."))
+const numero = Number(prompt("Digite o primeiro nï¿½mero."))
 
 if (numero > 0) {
-	console.log("Esse número passou no teste")
-	let mensagem = "Essa mensagem é secreta!"
+	console.log("Esse nï¿½mero passou no teste")
+	let mensagem = "Essa mensagem ï¿½ secreta!"
 }
 
 console.log(mensagem)
 
-// a) O que a primeira linha está fazendo?
+// a) O que a primeira linha estï¿½ fazendo?
+// recebendo um numero via prompt
 
-// b) Considere um usuário digitou o número 10. Qual será a mensagem do terminal? E se fosse o número -10?
+// b) Considere um usuï¿½rio digitou o nï¿½mero 10.
+// Qual serï¿½ a mensagem do terminal? E se fosse o nï¿½mero -10?
+// imprimiria "Esse nï¿½mero passou no teste" e
+// mensagem is not defined independente do numero que fosse recebido do prompt
 
-// c) Haverá algum erro no console? Justifique usando os conceitos de bloco ou escopo.
+// c) Haverï¿½ algum erro no console? Justifique usando 
+// os conceitos de bloco ou escopo.
+// let mensagem nao pode ser acessada fora do escopo do laÃ§o if
