@@ -1,18 +1,21 @@
 
-// Leia o código
+// Leia o cï¿½digo
 
-const respostaDoUsuario = prompt("Digite o número que você quer testar")
+const respostaDoUsuario = prompt("Digite o nï¿½mero que vocï¿½ quer testar")
 const numero = Number(respostaDoUsuario)
 
 if (numero % 2 === 0) {
 	console.log("Passou no teste.")
 }
 else {
-	console.log("Não passou no teste.")
+	console.log("Nï¿½o passou no teste.")
 }
 
-// a) Explique o que o código faz. Qual o teste que ele realiza?
+// a) Explique o que o cï¿½digo faz. Qual o teste que ele realiza?
+// verifica se Ã© par ou impar
 
-// b) Para que tipos de números ele imprime no console "Passou no teste"?
+// b) Para que tipos de nï¿½meros ele imprime no console "Passou no teste"?
+// par
 
-// c) Para que tipos de números a mensagem é "Não passou no teste"?
+// c) Para que tipos de nï¿½meros a mensagem ï¿½ "Nï¿½o passou no teste"?
+//impar
