@@ -17,6 +17,7 @@ console.log(mensagem)
 // Qual ser� a mensagem do terminal? E se fosse o n�mero -10?
 // imprimiria "Esse n�mero passou no teste" e
 // mensagem is not defined independente do numero que fosse recebido do prompt
+// -10 nao imprime nada
 
 // c) Haver� algum erro no console? Justifique usando 
 // os conceitos de bloco ou escopo.
