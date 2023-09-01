@@ -18,7 +18,6 @@
 
 let idade = Number(prompt("Qual sua idade?"));
 
-let podeDirigir = (idade) =>
-  idade >= 18 ? alert("Pode dirigir") : alert("Não pode dirigir");
+let podeDirigir = (idade) => idade >= 18 ? alert("Pode dirigir") : alert("Não pode dirigir");
 
 podeDirigir(idade);
