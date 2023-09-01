@@ -1,5 +1,6 @@
 
-// Leia o código abaixo, que foi feito por uma pessoa desenvolvedora, contratada para automatizar algumas tarefas de um supermercado
+// Leia o cï¿½digo abaixo, que foi feito por uma pessoa desenvolvedora,
+// contratada para automatizar algumas tarefas de um supermercado
 
 
 let fruta = prompt("Escolha uma fruta")
@@ -9,13 +10,13 @@ switch (fruta) {
 	case "Laranja":
 		preco = 3.5
 		break;
-	case "Maçã":
+	case "MaÃ§Ã£":
 		preco = 2.25
 		break;
 	case "Uva":
 		preco = 0.30
 		break;
-	case "Pêra":
+	case "Pera":
 		preco = 5.5
 		break; // BREAK PARA O ITEM D
 	default:
@@ -23,11 +24,17 @@ switch (fruta) {
 		break;
 }
 
-console.log("O preço da fruta ", fruta, " é ", "R$ ", preco)
+console.log("O preÃ§o da fruta ", fruta, " Ã© ", "R$ ", preco)
 
 
-// a) Para que serve o código acima?
+// a) Para que serve o codigo acima?
+// apÃ³s o usuario escolher uma fruta um valor Ã© atribuido e imprimido no console
 
-// b) Qual será a mensagem impressa no console, se o valor de fruta for "Maçã"?
+// b) Qual sera a mensagem impressa no console, se o valor de fruta for "MaÃ§Ã£"?
+//"O preÃ§o da fruta ", MaÃ§Ã£, " Ã© ", "R$ ", 2.25
 
-// c) Considere que um usuário queira comprar uma "Pêra", qual seria a mensagem impressa no console se retirássemos o "break" que está logo acima do "default" (o "break" indicado pelo comentário "BREAK PARA O ITEM D")?
+// c) Considere que um usuario queira comprar uma "Pera",
+// qual seria a mensagem impressa no console se retirassemos o "break"
+// que estï¿½ logo acima do "default" (o "break" indicado pelo comentï¿½rio
+// "BREAK PARA O ITEM D")?
+// imprimiria a mensagem com o preco default
