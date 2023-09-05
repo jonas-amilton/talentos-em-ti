@@ -1,6 +1,6 @@
 
 /**
- * O que o código abaixo está fazendo?
+ * O que o cï¿½digo abaixo estï¿½ fazendo?
  * Qual o resultado impresso no console?
 **/
 
@@ -11,3 +11,6 @@ for (let i = 0; i < 5; i++) {
 }
 
 console.log(valor)
+/**
+ * 10
+ */
