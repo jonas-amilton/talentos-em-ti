@@ -1,12 +1,34 @@
-
 /**
- * 
- * Pergunte ao usuário quantos bichos de estimação ele tem e guarde esse dado em uma variável.
- * 
- * Se a quantidade for 0, imprima no console "Que pena! Você pode adotar um pet!".
- * 
- * Se a quantidade for maior que 0, solicite que o usuário digite os nomes deles, um por um, e guarde esses nomes em um array.
- * Dica: coloque um "prompt" dentro de um loop. Esse loop deve ser executado a mesma quantidade de vezes que o usuário inseriu. Por exemplo: se o usuário tem 4 pets, ele deve conseguir inserir 4 nomes.
- * Por fim, imprima no console o "array" completo, com os nomes dos bichos.
- * 
-**/
+ *
+ * Pergunte ao usuï¿½rio quantos bichos de estimaï¿½ï¿½o ele
+ * tem e guarde esse dado em uma variï¿½vel.
+ *
+ * Se a quantidade for 0, imprima no console
+ * "Que pena! Vocï¿½ pode adotar um pet!".
+ *
+ * Se a quantidade for maior que 0, solicite que
+ * o usuï¿½rio digite os nomes deles, um por um,
+ * e guarde esses nomes em um array.
+ * Dica: coloque um "prompt" dentro de um loop.
+ * Esse loop deve ser executado a mesma quantidade
+ * de vezes que o usuï¿½rio inseriu. Por exemplo:
+ * se o usuï¿½rio tem 4 pets, ele deve conseguir inserir 4 nomes.
+ * Por fim, imprima no console o "array" completo,
+ * com os nomes dos bichos.
+ *
+ **/
+let quantidadeAnimaisDeEstimacao = Number(
+  prompt("Quantos animais de estimaÃ§Ã£o vocÃª tem?")
+);
+
+let listAnimaisDeEstimacao = [];
+
+if (quantidadeAnimaisDeEstimacao === 0) {
+  alert("Que pena! VocÃª pode adotar um pet!");
+} else {
+  while (listAnimaisDeEstimacao.length != quantidadeAnimaisDeEstimacao) {
+    listAnimaisDeEstimacao.push(prompt("Digite o nome do animal"));
+  }
+}
+
+console.log(listAnimaisDeEstimacao);
