@@ -1,30 +1,67 @@
-
 /**
- * 
- * Considere que você tenha acesso a um "array" que é composto somente de números. Crie uma função para cada um dos itens abaixo, realizando as operações pedidas:
- * 
- * 1) Escreva uma função que imprime cada valor do "array" em uma linha.
- * 
- * 2) Escreva uma função que imprime cada um dos valores do "array" divididos por 10.
- * 
- * 3) Escreva uma função que cria um novo array contendo somente os números pares do "array original" e, depois, imprima esse novo array.
- * 
- * 4) Escreva uma função que cria um novo array contendo strings no seguinte formato: "O elemento do índice 'i' é: 'numero'". Depois, imprima esse novo array.
- * 
- * 5) Escreva uma função que imprime no console o maior e o menor números contidos no "array original".
- * 
-**/
+ *
+ * Considere que vocï¿½ tenha acesso a um "array" que ï¿½
+ * composto somente de nï¿½meros. Crie uma funï¿½ï¿½o para
+ * cada um dos itens abaixo, realizando as operaï¿½ï¿½es pedidas:
+ *
+ * 1) Escreva uma funï¿½ï¿½o que imprime cada
+ *    valor do "array" em uma linha.
+ *
+ * 2) Escreva uma funï¿½ï¿½o que imprime cada um dos
+ *    valores do "array" divididos por 10.
+ *
+ * 3) Escreva uma funï¿½ï¿½o que cria um novo array
+ *    contendo somente os nï¿½meros pares do "array original"
+ *    e, depois, imprima esse novo array.
+ *
+ * 4) Escreva uma funï¿½ï¿½o que cria um novo array contendo
+ *    strings no seguinte formato:
+ *    "O elemento do ï¿½ndice 'i' ï¿½: 'numero'".
+ *    Depois, imprima esse novo array.
+ *
+ * 5) Escreva uma funï¿½ï¿½o que imprime no console o maior
+ *    e o menor nï¿½meros contidos no "array original".
+ *
+ **/
 
+const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55];
+let novoArray = [];
 
-const arrayOriginal = [ 80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55 ]
+imprimirLista(arrayOriginal);
 
+function imprimirLista(itens) {
+  itens.forEach((item) => console.log(item));
+}
 
-function imprimirLista (itens) {}
+imprimirValoresDivididos(arrayOriginal);
 
-function imprimirValoresDivididos (itens) {}
+function imprimirValoresDivididos(itens) {
+  itens.forEach((item) => console.log(item / 10));
+}
 
-function filtrarNumerosPares (numeros) {}
+filtrarNumerosPares(arrayOriginal);
 
-function identificarElementos (itens) {}
+function filtrarNumerosPares(numeros) {
+  for (let i = 0; i < arrayOriginal.length; i++) {
+    if (numeros[i] % 2 === 0) {
+      novoArray.push(numeros[i]);
+    }
+  }
+  console.log(novoArray);
+}
 
-function imprimirMaiorMenor (itens) {}
+identificarElementos(arrayOriginal);
+
+function identificarElementos(itens) {
+  for (let i = 0; i < arrayOriginal.length; i++) {
+  
+      console.log(`O elemento do indice ${i} Ã© ${itens[i]} da lista de itens: ${itens}`)
+ 
+  }
+}
+
+imprimirMaiorMenor(arrayOriginal);
+
+function imprimirMaiorMenor(itens) {
+  console.log(`O menor numero do array Ã© ${Math.min(...itens)} e o maior numero do array Ã© ${Math.max(...itens)}`);
+}
