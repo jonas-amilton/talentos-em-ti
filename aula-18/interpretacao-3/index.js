@@ -1,9 +1,9 @@
 
-// Qual seria o resultado impresso no console, se o usuário digitasse o número "4"?
+// Qual seria o resultado impresso no console, se o usuï¿½rio digitasse o nï¿½mero "4"?
 
 let quantidadeAtual = 0
 const quantidadeTotal = Number(prompt("Digite a quantidade de linhas"))
-
+             //0               //4
 while (quantidadeAtual < quantidadeTotal) {
 	let linha = ""
 
@@ -15,3 +15,10 @@ while (quantidadeAtual < quantidadeTotal) {
 
 	quantidadeAtual++
 }
+
+// vai pecorre o laÃ§o for e adicionar um * a let linha
+
+// *
+// **
+// ***
+// ****
