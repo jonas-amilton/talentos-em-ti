@@ -13,6 +13,7 @@ function cadastrar() {
   let cidade = prompt("Digite a cidade do abrigo");
 
   let novoAbrigo = {
+    codigo: Math.floor(Math.random() * 100),
     nomeAbrigo,
     endereco,
     telefone,
@@ -27,7 +28,9 @@ function cadastrar() {
 function listar() {
   console.log("Função de lista");
 
-  console.log("Código | Nome do Abrigo | Endereço | Telefone | Capacidade | Cidade \n");
+  console.log(
+    "Código | Nome do Abrigo | Endereço | Telefone | Capacidade | Cidade \n"
+  );
   console.log("-------------------------------------------------- \n");
 
   for (let i = 0; i < dados.length; i++) {
@@ -43,22 +46,31 @@ function listar() {
 function buscar() {
   console.log("Função de busca");
 
-  let cidadeProcurada = prompt("Qual cidade você está?");
+  let abrigoProcurado = prompt(
+    "Para procurar a cidade digite: \n Cidade do abrigo \n Nome do abrigo \n Endereço do abrigo"
+  );
 
-  for (let i = 0; i < dados.length; i++) {
-    if (cidadeProcurada === dados[i].cidade) {
-      console.log("Código | Nome do Abrigo | Endereço | Telefone | Capacidade | Cidade \n");
-      console.log(`Você está procurando por ${cidadeProcurada}`);
+  for (abrigoProcurado in dados) {
+    if (Object.hasOwnProperty.call(dados, abrigoProcurado)) {
+      const resultado = dados[abrigoProcurado];
+
+      console.log(
+        "Código | Nome do Abrigo | Endereço | Telefone | Capacidade | Cidade \n"
+      );
+      console.log(`Você está procurando por ${resultado.cidade}`);
       console.log("-------------------------------------------------- \n");
       console.log("LISTAGEM DE ABRIGOS: \n");
       console.log("-------------------------------------------------- \n");
-      console.log("Código | Nome do Abrigo | Endereço | Telefone | Capacidade | Cidade \n");
+      console.log(
+        "Código | Nome do Abrigo | Endereço | Telefone | Capacidade | Cidade \n"
+      );
       console.log("-------------------------------------------------- \n");
       console.log(
-        `${dados[i].codigo} | ${dados[i].nomeAbrigo} | ${dados[i].endereco} | ${dados[i].telefone} | ${dados[i].capacidade} | ${dados[i].cidade} \n`
+        `${resultado.codigo} | ${resultado.nomeAbrigo} | ${resultado.endereco} | ${resultado.telefone} | ${resultado.capacidade} | ${resultado.cidade} \n`
       );
     }
   }
+
 }
 
 // Função para deletar
@@ -79,10 +91,12 @@ function deletar() {
 // Função para editar
 function editar() {
   console.log("Função de editar");
+  
 
   let nomeDoAbrigoParaEditar = prompt(
     "Digite o nome do abrigo que deseja editar"
   );
+  
   for (let i = 0; i < dados.length; i++) {
     if (nomeDoAbrigoParaEditar === dados[i].nomeAbrigo) {
       let nomeAbrigo = prompt("digite o nome do abrigo");
