@@ -77,9 +77,7 @@ function buscar() {
 function deletar() {
   console.log("Função de deletar");
 
-  let nomeDoAbrigoParaDeletar = Number(
-    prompt("Digite o nome do abrigo que deseja deletar")
-  );
+  let nomeDoAbrigoParaDeletar = prompt("Digite o nome do abrigo que deseja deletar");
 
   for (let i = 0; i < dados.length; i++) {
     if (nomeDoAbrigoParaDeletar === dados[i].nomeAbrigo) {
