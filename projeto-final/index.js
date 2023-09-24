@@ -47,7 +47,7 @@ function buscar() {
   console.log("Função de busca");
 
   let abrigoProcurado = prompt(
-    "Para procurar a cidade digite: \n Cidade do abrigo \n Nome do abrigo \n Endereço do abrigo"
+    "Para procurar o abrigo digite o nome dele"
   );
 
   for (abrigoProcurado in dados) {
