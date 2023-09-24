@@ -57,7 +57,7 @@ function buscar() {
       console.log(
         "Código | Nome do Abrigo | Endereço | Telefone | Capacidade | Cidade \n"
       );
-      console.log(`Você está procurando por ${resultado.cidade}`);
+      console.log(`Você está procurando por ${resultado.nomeAbrigo}`);
       console.log("-------------------------------------------------- \n");
       console.log("LISTAGEM DE ABRIGOS: \n");
       console.log("-------------------------------------------------- \n");
